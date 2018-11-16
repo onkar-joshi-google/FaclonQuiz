@@ -1,0 +1,53 @@
+Quiz Solutions
+
+Open folder in cmd and run the following commands -
+	i) npm install validator
+	ii) npm install mongodb
+
+1) filename: PrimeNumber.js
+   how to run: 
+	i) open folder in cmd (folder in which the file is present). 
+	ii) run command "node PrimeNumber.js".
+	iii) Server has started. Using the postman link given, hit the link/ run it on your browser.
+
+   url: http://localhost:8080/?maxNumber=100
+	*note - you can replace any number with 100 in the above URL
+   MethodType: GET
+
+2) filename: UserPost.js
+   how to run: 
+	i) open folder in cmd (folder in which the file is present). 
+	ii) run command "node UserPost.js".
+	iii) Server has started. Using the postman link given, hit the link with json body.
+
+   url: http://localhost:8080
+   MethodType: POST
+
+3) filename: Contact.js
+   how to run: 
+	i) open folder in cmd (folder in which the file is present). 
+	ii) run command "node PrimeNumber.js".
+	iii) Server has started. Using the postman link given, hit the link/ run it on your browser.
+
+   url: http://localhost:8080/?userId='Type in your userId here (without quotes)'
+   MethodType: DELETE
+
+
+Other details.
+
+1) The postman link for the above three urls is :- https://www.getpostman.com/collections/c5e451dfe96b8e7ec4e0
+	To import in postman - 
+	i) Open postman app.
+	ii) Click on import button which is the 4th button from top left corner.
+	iii) Select Import from Link in the popup and paste the link there.
+	iv) Click on import button. :)
+   You can import it in postman and just hit the three urls one by one.
+
+2) Validations-
+	i) Email, phone, name (text), age (number) validations have been done.
+	ii) Mentioned validation (email and phone pair must be unique) has been taken care of.
+		i.e you cannot enter more than one entry with the same pair of email and phone.
+
+3) A new contact can be added specifying the "userId" of the user already present in the database. 
+
+4) When using the delete call, the server first deletes the user with the specified userId and then deletes all contacts with that userId.
